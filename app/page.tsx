@@ -14,9 +14,10 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold">
-       CI/CD Working Successfully 🚀
+       {/* CI/CD Working Successfully 🚀 */}
+       CI/CD + Environment Variables 🚀
       </h1>
-
+      <h2>{process.env.NEXT_PUBLIC_APP_NAME}</h2>
       <p className="mt-5 text-2xl">
         {message}
       </p>
