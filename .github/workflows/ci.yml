@@ -22,5 +22,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Read GitHub Secret
+        run: echo "Secret is ${{ secrets.MY_SECRET_MESSAGE }}"
+
       - name: Build Next.js App
         run: npm run build
